@@ -1,10 +1,13 @@
 import React, {useState} from "react";
 import axios from "axios";
+import SearchResults from "./SearchResults";
 
 
 function SearchEngine (){
 
     const [keyword, setKeyword] = useState ("");
+    const [results, setResults] = useState (null);
+
 
     function wordSearch (event) {
 
@@ -19,10 +22,13 @@ function SearchEngine (){
     function keywordChange (event) {
         setKeyword(event.target.value);
 
+        
+
     }
 
     function handleResponse (response) {
-        console.log(response);
+        setResults(response.data);
+        console.log(response.data);
     }
 
    
@@ -33,6 +39,7 @@ function SearchEngine (){
             <form action="Search" onSubmit={wordSearch}>
                 <input type="search" placeholder="Enter a word..." onChange={keywordChange} />
             </form>
+            <SearchResults results={results}/>
         </div>
 
     )
