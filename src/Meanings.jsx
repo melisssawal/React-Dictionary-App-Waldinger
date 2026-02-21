@@ -6,9 +6,9 @@ function Meanings(props) {
 
     return (
         <div className="Meanings">
-            <h4>{props.meanings.partOfSpeech}</h4>
-            <p>{props.meanings.definition}</p>
-            <p>{props.meanings.example}</p>
+            <h4 className="partsOfSpeech">{props.meanings.partOfSpeech}</h4>
+            <p className="definition">{props.meanings.definition}</p>
+            <p className="example">{props.meanings.example}</p>
 
         </div>
     )

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
 import SearchResults from "./SearchResults";
+import "./searchEngine.css";
 
 
 function SearchEngine (){
@@ -34,10 +35,10 @@ function SearchEngine (){
    
 
     return (
-        <div className="Dictionary">
+        <div className="dictionary">
 
-            <form action="Search" onSubmit={wordSearch}>
-                <input type="search" placeholder="Enter a word..." onChange={keywordChange} />
+            <form action="Search" onSubmit={wordSearch} >
+                <input className="searchBar" type="search" placeholder="Enter a word..." onChange={keywordChange} />
             </form>
             <SearchResults results={results}/>
         </div>
