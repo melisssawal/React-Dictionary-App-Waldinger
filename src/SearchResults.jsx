@@ -10,7 +10,9 @@ function SearchResults (props) {
 
             <div className="SearchResults">
             <h2 className="searchWord">{props.results.word}</h2>
-            <p className="searchPhonetic"> / {props.results.phonetic} / </p>    
+           
+            <p className="searchPhonetic"> / {props.results.phonetic} / </p>     
+            <hr />
             {props.results.meanings.map(function(meanings, index){
                 return (
                     <div key={index}>

@@ -1,23 +1,53 @@
-
+/*SearchEngine.jsx*/
 
 .dictionary {
     padding: 40px;
+}
+
+.search-intro {
+    font-family: "Roboto Flex", sans-serif;
+    text-align: center;
+    opacity: 70%;
+    
+}
+
+.search-form {
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 
 .searchBar {
     display: block;
     margin: 0 auto;
+    margin-top: 30px;
     border-radius: 10px;
-    border: 2px solid grey;
-    padding: 12px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 15px;
     font-size: 15px;
     color: grey;
-    width: 40%; 
+    width: 50%; 
 }
+
+.example-text {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 60%;
+    text-align: center;
+}
+
+.container-for-results {
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/*SearchResults.jsx*/
 
 .SearchResults {
     margin-left: 30px;
@@ -25,25 +55,51 @@
 
 .searchWord {
     font-size: 40px;
+    font-family: "DM Serif Text", serif;
 }
 
+hr {
+    border-radius: 10px;
+    border-top: 1px solid grey;
+}
+
+/*Meanings.jsx*/
+
 .Meanings {
-    padding: 10px;
+    padding: 10px; 
 }
 
 .partsOfSpeech {
+    font-family: "Roboto Flex", sans-serif;
     font-size: 18px;
-    margin: 0px;
+    
 }
 
 .definition {
     font-size: 17px;
-    margin: 8px;
+    margin: 8px 0px;
+    font-family: "Roboto Flex", sans-serif;
 }
 
 .example {
     font-style: italic;
     opacity: 80%;
+    margin-left: 10px;
 }
 
+
+
+/*Synonyms.jsx*/
+
+.synonyms {
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.synonyms li {
+    display: inline-block;
+    padding-right: 10px;
+    line-height: 1.5;
+
+
+}
 

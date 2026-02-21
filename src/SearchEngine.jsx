@@ -37,10 +37,15 @@ function SearchEngine (){
     return (
         <div className="dictionary">
 
-            <form action="Search" onSubmit={wordSearch} >
+            
+
+            <form action="Search" onSubmit={wordSearch} className="search-form">
+                <h2 className="search-intro">What word can we help you find today?</h2>
                 <input className="searchBar" type="search" placeholder="Enter a word..." onChange={keywordChange} />
+                <p className="example-text">Examples: bear, strawberry, wander, confident...</p>
             </form>
-            <SearchResults results={results}/>
+            <div className="container-for-results">
+            <SearchResults results={results}/></div>
         </div>
 
     )
