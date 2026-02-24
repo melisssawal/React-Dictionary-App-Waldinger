@@ -66,28 +66,26 @@ hr {
 /*Meanings.jsx*/
 
 .Meanings {
-    padding: 10px; 
+    padding: 10px !important; 
 }
 
 .partsOfSpeech {
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 18px;
+    font-family: "Roboto Flex", sans-serif !important;
+    font-size: 18px !important;
     
 }
 
 .definition {
-    font-size: 17px;
-    margin: 8px 0px;
-    font-family: "Roboto Flex", sans-serif;
+    font-size: 17px !important;
+    margin: 8px 0px !important;
+    font-family: "Roboto Flex", sans-serif !important;
 }
 
 .example {
-    font-style: italic;
+    font-style: italic !important;
     opacity: 80%;
-    margin-left: 10px;
+    margin-left: 10px !important;
 }
-
-
 
 /*Synonyms.jsx*/
 
@@ -100,6 +98,22 @@ hr {
     padding-right: 10px;
     line-height: 1.5;
 
+
+}
+
+/*PhotoDisplay.jsx*/
+
+.photo-display-container {
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.photo-display-container img {
+    border-radius: 7px;
+    margin-bottom: 8px;
 
 }
 
