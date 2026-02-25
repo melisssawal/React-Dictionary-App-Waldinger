@@ -11,7 +11,7 @@ function PhotoDisplay(props) {
                 <div className="row">
                     {props.photos.map(function (photos, index) {
                     return (
-                        <div className="col-4" key={index}>
+                        <div className="col-sm-4" key={index}>
                         <a href={photos.url} target="_blank">
                         <img src={photos.src.landscape} alt={photos.alt} className="img-fluid"  />
                         </a>

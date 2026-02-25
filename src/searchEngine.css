@@ -8,7 +8,7 @@
     font-family: "Roboto Flex", sans-serif;
     text-align: center;
     opacity: 70%;
-    
+
 }
 
 .search-form {
@@ -28,7 +28,7 @@
     padding: 15px;
     font-size: 15px;
     color: grey;
-    width: 50%; 
+    width: 50%;
 }
 
 .example-text {
@@ -66,25 +66,25 @@ hr {
 /*Meanings.jsx*/
 
 .Meanings {
-    padding: 10px !important; 
+    padding: 10px;
 }
 
 .partsOfSpeech {
-    font-family: "Roboto Flex", sans-serif !important;
-    font-size: 18px !important;
-    
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 18px;
+
 }
 
 .definition {
-    font-size: 17px !important;
-    margin: 8px 0px !important;
-    font-family: "Roboto Flex", sans-serif !important;
+    font-size: 17px;
+    margin: 8px 0px;
+    font-family: "Roboto Flex", sans-serif;
 }
 
 .example {
-    font-style: italic !important;
+    font-style: italic;
     opacity: 80%;
-    margin-left: 10px !important;
+    margin-left: 10px;
 }
 
 /*Synonyms.jsx*/
@@ -97,8 +97,6 @@ hr {
     display: inline-block;
     padding-right: 10px;
     line-height: 1.5;
-
-
 }
 
 /*PhotoDisplay.jsx*/
@@ -117,3 +115,41 @@ hr {
 
 }
 
+/*Media Queries*/
+
+@media (max-width: 1000px) {
+
+    .dictionary {
+            padding: 10px;
+        }
+
+    .search-form {
+        padding: 15px;
+    }
+
+    .searchBar {
+        margin-top: 20px;
+        margin-bottom: 14px;
+        padding: 15px;
+        font-size: 15px;
+        width: 90%;
+    }
+
+        .container-for-results {
+            text-align: center;
+            padding: 10px;
+        }
+    
+        .SearchResults {
+            margin-left: 0px;
+        }
+
+        .definition {
+            font-size: 20px;
+        }
+
+                .photo-display-container {
+                    padding: 15px;
+                }
+
+}
